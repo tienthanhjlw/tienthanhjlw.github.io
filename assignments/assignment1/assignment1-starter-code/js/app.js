@@ -5,18 +5,15 @@
 
 	.controller('LunchCheckController', function ($scope) {
 		$scope.name = "";
-		var arrayname; 
+		var arrayname;
 		$scope.sayHello = function () {
 			return "Hello "+$scope.name+" Welcome to Coursera";
 		};
 
 		$scope.lunchCheck = function () {
-			if($scope.name == "") {
-				return console.log("Noo");
-			}
 			arrayname = $scope.name.split(',');
 			console.log(arrayname);
-			if (!arrayname.length) {
+			if ($scope.name == "") {
 				$scope.message = "Please enter data first";
 				$scope.message_color = "red";
 
