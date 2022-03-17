@@ -36,7 +36,9 @@
     text-transform: capitalize;
 }
 
-.header ul li a.active {
+
+.header ul li a.active,
+.header ul li a:hover {
     background-color: #9e9e9e;
     color: #fff;
 }
@@ -212,5 +214,76 @@
     100% {
         background-color: orange; 
         left: -100%;
+    }
+}
+
+.top-selling-product {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.top-selling .top-selling-title {
+    background-color: #2196f3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.top-selling .top-selling-number {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.top-selling .top-selling-number div {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-info {
+    padding: 100px;
+    animation: info-text 15s linear 4s infinite;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+
+@keyframes info-text {
+    0% {
+        background-color:blue; 
+        color: #fff
+    }
+
+    25% {
+        background-color:#fff; 
+        color: darkslateblue;
+    }
+
+    50% {
+        background-color:#fff; 
+        color: cornflowerblue;
+    }
+
+    75% {
+        background-color: rgb(218, 26, 106); 
+        color: #fff;
+    }
+
+    100% {
+        background-color: #000; 
+        color: #FFF;
     }
 }
